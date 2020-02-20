@@ -27,4 +27,4 @@ function initClock(){
     SECONDHAND.style.transform = "rotate(" + secPos + "deg)";    
 }
 
-var secInterval = setInterval(initClock, 1000);
+setInterval(initClock, 1000);
