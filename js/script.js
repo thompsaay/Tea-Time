@@ -26,7 +26,16 @@ function tick() {
     MINUTEHAND.style.transform = "rotate(" + minPos + "deg)";
     SECONDHAND.style.transform = "rotate(" + secPos + "deg)";
 
-    switch (date.getHours()) {
+    updateHeading();
+
+
+}
+
+function updateHeading(){
+
+    let currentTime = new Date();
+
+    switch (currentTime.getHours()) {
         case 14:
             TIMEHEADER.innerText = "Nearly there...";
             break;
