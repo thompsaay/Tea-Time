@@ -21,13 +21,6 @@ body {
     text-align: center;
 }
 
-@media (max-width: 48rem) {
-    .clockbox, #clock  {
-    height: 300px;
-    }
-}
-
-
 /* Clock styles */
 .circle {
     fill: none;
@@ -93,12 +86,6 @@ body {
     text-align: center;
 }
 
-@media (max-width: 48rem) {
-    .font-box h1 {
-    font-size: 1.5em;
-    }
-}
-
 .party-time {
 
     background: linear-gradient(to right, #fff 10%, #8A2387 50%, #fff 60%);
@@ -117,4 +104,22 @@ body {
 	to {
 		background-position: 200% center;
 	}
+}
+
+
+/* Mobile */
+
+@media (max-width: 48rem) {
+
+    .main {
+        height: 60vh;
+    }
+
+    .clockbox, #clock  {
+        height: 300px;
+    }
+
+    .font-box h1 {
+        font-size: 1.5em;
+    }
 }
