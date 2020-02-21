@@ -27,8 +27,6 @@ function tick() {
     SECONDHAND.style.transform = "rotate(" + secPos + "deg)";
 
     updateHeading();
-
-
 }
 
 function updateHeading(){
@@ -41,12 +39,15 @@ function updateHeading(){
             break;
         case 15:
             TIMEHEADER.innerText = "TIME FOR TEA FAM!";
+            TIMEHEADER.classList.add("party-time");
             break;
         case 16:
             TIMEHEADER.innerText = "Just missed it </3";
+            TIMEHEADER.classList.remove("party-time");
             break;
         default:
             TIMEHEADER.innerHTML = "Not time for tea yet, sorry!";
+            
     }
 }
 
