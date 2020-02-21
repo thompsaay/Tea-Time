@@ -79,3 +79,8 @@ body {
     transform-origin: 300px 300px;
     transition: transform .5s ease-in-out;
 }
+
+.font-box h1 {
+
+    font-size: 3em;
+}
